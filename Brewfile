@@ -1,0 +1,69 @@
+# --- Essentials
+brew "git"
+brew "gh"
+brew "go"
+brew "curl"
+brew "wget"
+brew "jq"
+brew "sevenzip"
+brew "bat"
+brew "tree"
+brew "fd"
+brew "ripgrep"
+
+# --- Shell / terminal workflow
+brew "tmux"
+brew "powerlevel10k"
+brew "zsh-autocomplete"
+brew "zsh-autosuggestions"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+
+# --- Android / Kotlin
+brew "kotlin"
+brew "ktlint"
+brew "detekt"
+brew "cocoapods"
+
+# --- JS / RN toolchain
+brew "mise"
+brew "nvm"
+brew "pnpm"
+brew "yarn"
+brew "typescript"
+brew "watchman"
+
+# --- DevOps / local services
+brew "lazygit"
+brew "lazydocker"
+brew "redis"
+brew "jfrog-cli"
+brew "firebase-cli"
+brew "gemini-cli"
+brew "pre-commit"
+
+# --- Docs
+brew "pandoc"
+brew "mdv"
+brew "markdown"
+
+# --- Apps
+cask "iterm2"
+cask "zed"
+cask "docker-desktop"
+cask "insomnia"
+cask "figma"
+cask "slack"
+cask "spotify"
+cask "brave-browser"
+cask "nordvpn"
+cask "only-switch"
+cask "bettercapture"
+cask "minisim"
+cask "miaoyan"
+cask "conductor"
+cask "temurin@8"
+cask "chatgpt"
+cask "claude"
+cask "codex"
+cask "steipete/tap/codexbar"
