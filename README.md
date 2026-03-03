@@ -19,13 +19,13 @@ chmod +x bootstrap.sh
 ./bootstrap.sh
 ```
 
-## ¿Qué hace?
+### ¿Qué hace?
 - Instala Xcode Command Line Tools (si faltan)
 - Instala Homebrew (si falta)
 - Corre brew bundle usando tu Brewfile
 - Configura mise en ~/.zshrc (si está instalado)
 
-## Validación
+### Validación
 
 ```bash
 brew --version
@@ -37,35 +37,35 @@ node -v
 java -version
 ```
 
-## Nota sobre Node (mise vs nvm)
+### Nota sobre Node (mise vs nvm)
 
 Este setup pude incluir ambos. Recomendación:
 - Usa mise como runtime manager principal.
 - Deja nvm solo si tienes proyectos legacy que lo requieran.
 
-## App Store (opcional con mas)
+### App Store (opcional con mas)
 
 Si quieres instalar apps del App Store (ej: Xcode) por CLI:
 
-### 1. Agrega a Brewfile:
+1. Agrega a Brewfile:
 
 ```ruby
 brew "mas"
 ```
 
-### 2. Logueate en la App Store:
+2. Logueate en la App Store:
 
-### 3. Busca IDs:
+3. Busca IDs:
 ```bash
 mas search Xcode
 ```
 
-### 4. Instala apps:
+4. Instala apps:
 ```bash
 mas install <APP_ID>
 ```
 
-## Mantenimiento
+### Mantenimiento
 
 - Actualizar todo:
 ```bash
@@ -74,33 +74,4 @@ brew update && brew upgrade && brew cleanup
 - Revisar si falta algo del Brewfile:
 ```bash
 brew bundle check
-```
-
-## Licencia
-Uso personal.
-
-```code
----
-
-## 3) Bonus opcional: `defaults.sh` (tweaks básicos)
-Si quieres, mete esto como script adicional (100% opcional) para “dejar macOS a tu gusto”:
-
-```bash
-#!/usr/bin/env bash
-set -euo pipefail
-
-# Finder: mostrar extensiones
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
-# Finder: mostrar path bar
-defaults write com.apple.finder ShowPathbar -bool true
-
-# Dock: acelerar animaciones (mínimo)
-defaults write com.apple.dock autohide-time-modifier -float 0.2
-defaults write com.apple.dock autohide-delay -float 0
-
-killall Finder || true
-killall Dock || true
-
-echo "Defaults aplicados."
 ```
