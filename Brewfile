@@ -10,6 +10,7 @@ brew "bat"
 brew "tree"
 brew "fd"
 brew "ripgrep"
+brew "mas"
 
 # --- Shell / terminal workflow
 brew "tmux"
