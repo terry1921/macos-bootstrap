@@ -15,6 +15,8 @@ brew "mas"
 # --- Shell / terminal workflow
 brew "tmux"
 brew "powerlevel10k"
+brew "btop"
+brew "fastfetch"
 brew "zsh-autocomplete"
 brew "zsh-autosuggestions"
 brew "zsh-completions"
